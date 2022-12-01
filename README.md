@@ -4,7 +4,7 @@ This website is a fine summary of my professional profile
 ________
 
 # Live Previews: 
-## http://ismailukman.github.io/cv.html
+## https://ismailukman.github.io/cv.html
 
 # Credits:
 
