@@ -1,10 +1,10 @@
-# Lukman CV Website
+# Lukman Profile Page
 
 This website is a fine summary of my professional profile
 ________
 
 # Live Previews: 
-## http://ismailukman.herokuapp.com/cv.html
+## http://ismailukman.github.io/cv.html
 
 # Credits:
 
