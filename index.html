@@ -21,21 +21,56 @@
 <script src="_assets/js/jquery.min.js"></script>
 <script src="_assets/js/sketch.min.js"></script>
 <script src="_assets/js/main.js"></script> -->
-  <style>
+<style>
 
-.map-container{
-overflow:hidden;
-padding-bottom:56.25%;
-position:relative;
-height:0;
-}
-.map-container iframe{
-left:0;
-top:0;
-height:100%;
-width:100%;
-position:absolute;
-}
+  .map-container{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  }
+  .map-container iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  }
+  
+  /* Social Icons */
+  .social_icons {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .social_icons ul{
+    width:100%;
+    margin:0;
+    padding:0;
+    outline: none;
+    margin-bottom:30px;
+  }
+  .social li{
+    display:inline;
+    margin-right:5px;
+  }
+  .social li a {
+    outline: 0;
+  }
+  .social img {
+      transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -webkit-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+  }
+  .social img:hover {
+      -webkit-transform: rotateY(360deg);
+      -moz-transform: rotateY(360deg);
+      -ms-transform: rotateY(360deg);
+      -o-transform: rotateY(360deg);
+      transform: rotateY(360deg);
+  }
+  
   </style>
 </head>
 
@@ -71,6 +106,8 @@ position:absolute;
             <li class="nav-item">
               <a href="cv.html" class="btn btn-outline-primary waves-effect" role="button">CV</a>
             </li>  
+
+            
 
             <!-- <div class="dropdown">
               <button class="btn btn-outline-primary dropdown-toggle waves-effect" type="button" id="dropdownMenu4" data-toggle="dropdown"
@@ -129,130 +166,132 @@ position:absolute;
       <!-- Heading -->
 
       <div class="wrapper">
-        <div class="main-wrapper">
-          
-
-      <div class="row">
-
-    <div class="col-lg-2 col-md-6 mb-4">
+      <div class="main-wrapper col d-flex justify-content-center">
+           
+      <div class="row"> 
+          <!-- <div class="col-lg-2 col-md-6 mb-4">
             <h4 class="py-lg-4 pb-4 text-center"> </h4>
             <div class="form-group shadow-textarea">
              </div>
         
-          </div>
-
-          <div class="col-lg-8 col-md-12 mb-12">
-        
-            <h4 class="py-12 text-center">Profile Summary</h4>
+          </div> -->
+  
+            <!-- <h4 class="py-12 text-center">Profile Summary</h4> -->
         
             <!--Card-->
-            <div class="card card-cascade wider mb-12">
+            <div class="card card-cascade wider mb-12 center">
         
               <!--Card image-->
-              <div class="view view-cascade">
+              <section class="slide" id="home" data-slide="1">
+                <div class="container">	
+                  <div class="row ">
+                    <div class="col-md-auto align-items-center">
+                      <!-- Main Photo -->
+                      <div class="portrait">
+                        <img src="assets/images/lukman_ismaila.png" width="300px" height="300px" alt="" class="rounded-circle"/>	
+                    </div>
+                      <!-- End Main Photo -->
+                      
+                      <!-- <h4 class="card-title"><strong>Lukman Enegi ISMAILA </strong></h4>
+                      <h5 class="indigo-text"><strong>Doctoral Researcher in Machine Learning</strong></h5> -->
+                      <!-- End Main Title -->
+                              <!-- Social Icons. Just add your link to href="your_link" -->
+                      <div class="social_icons">
+                          <ul class="social">
+                              <li><a class="tip" href="https://www.linkedin.com/in/ismailukmanenegi/" title="Linkedin"><img src="assets/images/linkedin.png" alt="" /></a></li>
+                              <li><a class="tip" href="https://twitter.com/LukmanEnegi" title="Twitter"><img src="assets/images/twitter.png" alt="" /></a></li> 
+                              <li><a class="tip" href="https://www.instagram.com/ismailukman/" title="Instagram"><img src="assets/images/instagram.png" alt="" /></a></li>
+                              <li><a class="tip" href="#" title="live:ismailukman"><img src="assets/images/skype.png" alt="" /></a></li>
+                          </ul> 
+                      </div> 
+                      <!-- <div class="col-md-auto align-items-center">
+                        <a class="btn btn-primary center rounded" href="cv.html" role="button">View Curriculum vitae<i class="fas fa-eye ml-2"></i> </a> <br>
+                        <a class="btn btn-primary center rounded" href="cv.html" role="button">Download Curriculum vitae<i class="fas fa-download ml-2"></i> </a>
+                      </div>  -->
+                    </div>
+                    <div class="col"  style="background-color:rgb(255, 255, 255);">
+                      
+                      <div id="home_content_1" class="home-content">
+                        <div class="row flex-v-align">
+                          <!-- <div class="col-sm-12 without-padding col-md-6 col-lg-6">
+                            <div class="home-photo">
+                              <div class="hp-inner" style="background-image: url(./img/sp_photo.jpg)"></div>
+                            </div>
+                          </div> -->
+    
+                          <!-- <div class="col-sm-12 col-md-6 col-lg-6"> -->
+                            <div class="home-text">
+                              <!-- <div class="owl-carousel text-rotation">                                    
+                                <div class="item">
+                                  <h4>Web Designer</h4>
+                                </div>
+                                
+                                <div class="item">
+                                  <h4>Frontend-developer</h4>
+                                </div>
+                              </div> -->
+                              
+                              <h1><span class="font-weight-light">Lukman Enegi</span> ISMAILA</h1>
+                              <h5 class="indigo-text"><strong>Doctoral Researcher in Machine Learning</strong></h5>
+                              <!-- <p>I am a self-motivated doctoral research student in the field of Computer Science. Currently, I pursue my passion in medical imaging at University of Angers with focus on machine learning applications in Neuroscience.</p> -->
+                          
+                              <div class="p-4 mt-1 border border-dark rounded">I am a doctoral research student in data science. Currently, I apply machine learning techniques for medical imaging, specifically for neuro-surgical planning for brain tumor removal. In my previous years, I enjoyed my professional engagement as a software engineer, with over 5 years experience in using web and mobile technologies through notable research projects and company driven products. I have more than 3 years of university lecturing experience, where I supported my students to success, by demystifying complex theoretical concepts in computer science. As a natural problem solver, I collaborate excellently with team of multidisciplinary background in a wide range of topics in the computer science domain for scientific research. I am passionate about medical image processing, image reconstruction, graph representation learning, reinforcement learning, predictive modeling and scalable algorithms.</div>
+                            
+                              <div class="home-buttons mt-1">
+                                <a class="btn btn-primary center rounded" href="cv.html" role="button">View Curriculum vitae<i class="fas fa-eye ml-2"></i> </a>
+                                <a class="btn btn-primary center rounded" href="assets/images/Lukman_CV.pdf" role="button">Download Curriculum vitae<i class="fas fa-download ml-2"></i> </a>
+                              </div>
 
-                <img src="assets/images/luk.png" width="200px" height="600px" class="card-img-top">
-                <a href="#!">
-                  <div class="mask rgba-white-slight"></div>
-                </a>
+                              <!-- <div class="col-md-auto align-items-center">
+                                <a class="btn btn-primary center rounded" href="cv.html" role="button">View Curriculum vitae<i class="fas fa-eye ml-2"></i> </a> <br>
+                                <a class="btn btn-primary center rounded" href="cv.html" role="button">Download Curriculum vitae<i class="fas fa-download ml-2"></i> </a>
+                              </div> -->
  
-                <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="assets/images/luk.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="d-block w-100" alt="...">
+                            </div>
+    
+                          <!-- </div> -->
+                        </div>
+                      </div> 
                     </div>
                   </div>
-                 <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </button>
-                </div> -->
-
-
-
-              </div>
+     
+                </div>
+              </section>
               <!--/Card image-->
         
               <!--Card content-->
               <div class="card-body card-body-cascade text-center">
-                <!--Title-->
-                <h4 class="card-title"><strong>Lukman Enegi ISMAILA </strong></h4>
-                <h5 class="indigo-text"><strong>Doctoral Researcher in Machine Learning</strong></h5>
-        
-                <p align="justify">I am a self-motivated doctoral research student in the field of Computer Science. 
-                  Currently, I pursue my passion in medical imaging at University of Angers with focus on machine learning 
-                  applications in Neuroscience</p>
-                <p align="justify">I hold more than 3 years experience of university lecturing where I demystify complex computer science concepts for my students to enable then succeed more easily.
-                  I enjoyed my software develoment experience which lasted for about 5 years, filled exciting projects for scientific research and company driven demands. 
-                  I love to transform ideas into application that positivel impact our lives and the people around me. </p>
-                <p align="justify"> When I am not coding, I love spend time with my family, travelling to see the world and beyound, I play football, video games, table-tennis and improve my swimming skills. My career goal is to create sustainable tech-driven 
-                  solution to address the most pressing problem in my society.   </p>
+                <!--Title--> 
                 
-        
-        
-                <!--Linkedin-->
-                <!-- <a class="icons-sm li-ic"><i class="fab fa-linkedin-in"> </i></a> -->
-                <!--Twitter-->
-                <!-- <a class="icons-sm tw-ic"><i class="fab fa-twitter"> </i></a> -->
-                <!--Dribbble-->
-                <!-- <a class="icons-sm fb-ic"><i class="fab fa-facebook-f"> </i></a> -->
-        
+                <div align="left" class="p-4 border border-dark rounded">
+                  <h5 align="left" class="indigo-text"><strong>Research Interests</strong></h5>
+                  I am passionate about medical-imaging, image reconstruction, graph representation learning, reinforcement learning, predictive modeling and scalable algorithms.</div>
+                <div align="left" class="p-3 mt-3 border border-dark rounded">
+                  <h5 align="left" class="indigo-text"><strong>Honors and Awards</strong></h5>
+                  <ul>
+                    <li>Datasphere Research Fellowship: International multi-disciplinary program on current medical data policy for scientific research, Oct 2022-Aug 2023</li>
+                    <li>Doctoral Research Scholarship: Petroleum Technology Development Fund (PTDF), Nigeria Sept 2020-Aug 2023</li>
+                    <li>Award of Excellence: Software for Student Representative Counsel (SRC) Election - 2018</li>
+                    <li>African Development Bank (ADB) Scholarship: Full-M.Sc Scholarship program in Computer Science</li>
+                    <li>3rd Overall Best Graduating Students in Class-of-2015</li>
+                    <li>2nd Best Graduating Students in Computer Science 2015</li>
+                  </ul> </div>
+                <div align="left" class="p-3 mt-3 border border-dark rounded">
+                  <h5 align="left" class="indigo-text"><strong>Teaching Summary</strong></h5>
+                  <ul>
+                    <li>Numbers, Set theory, limits and continuity of functions, differentiation of functions, applications of the derivative, integration of functions, double integrals, triple integrals, line integrals and surface integrals etc.</li>
+                    <li>Algorithms and data structures, computer networking, computer architecture, numerical analysis, Databases, mobile & web application programming.</li>
+                  </ul>
+                </div>  
               </div>
               <!--/.Card content-->
         
             </div>
             <!--/.Card-->
-               
-          </div>
-
-          <!-- <div class="col-lg-4 col-md-6 mb-4">
-        
-            <h4 class="py-lg-4 pb-4 text-center">Freedom Text</h4>
-        
-            <div class="form-group shadow-textarea">
-              <label for="exampleFormControlTextarea6">Welcome to freedom space</label>
-              <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3" placeholder="Write something here..."></textarea>
-            </div>
-        
-          </div> -->
-
-          <!-- <div class="container my-5">
-            <div class="row">
-              <div class="col-md-12 mb-4">
-                <div id="canvas-holder">
-                  <canvas id="chart-area"></canvas>
-                </div>
-              </div>
-              <div class="col-md-12 d-flex justify-content-center">
-                <button class="btn btn-primary btn-sm" id="randomizeData">Randomize Data</button>
-                <button class="btn btn-primary btn-sm ml-0" id="addDataset">Add Dataset</button>
-                <button class="btn btn-primary btn-sm ml-0" id="removeDataset">Remove Dataset</button>
-                <button class="btn btn-primary btn-sm ml-0" id="addData">Add Data</button>
-                <button class="btn btn-primary btn-sm ml-0" id="removeData">Remove Data</button>
-                <button class="btn btn-primary btn-sm ml-0" id="changeCircleSize">Semi/Full Circle</button>
-              </div>
-            </div>
-          </div> -->
-
-        </div> 
-            
-            <!--//skills-section--> 
-
-        </div><!--//main-body-->
-
+                
  
-
-
+        </div> 
+        </div><!--//main-body-->
       </div>
   
     </div>
